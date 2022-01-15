@@ -1,0 +1,10 @@
+.element__picture {
+  max-height: 19px;
+  margin: 4px 2px 0 30px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.element__picture:hover {
+  opacity: 0.5;
+}

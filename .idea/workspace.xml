@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef46fe9c-24ae-4778-a601-bd871a825867" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/blocks/content/content.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__card/element__card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__like/_active/element__like_active.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__like/element__like.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/elements/__list/elements__list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/elements/elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/header/__logo/header__logo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/page/__container/page__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__close-btn/popup__close-btn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__submit-btn/popup__submit-btn.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__text/popup__text.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__title/popup__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__info/profile__info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__subtitle/profile__subtitle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/__title/profile__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dombai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/elbrus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/karachaevsk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/__copyright/footer__copyright.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-900.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-500.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-500.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/Inter-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/inter-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts/fonts.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22n2TW0K2wJvbd8mAFuDJ3WaEkL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=" kara" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef46fe9c-24ae-4778-a601-bd871a825867" name="Changes" comment="" />
+      <created>1640459041509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640459041509</updated>
+      <workItem from="1640459047422" duration="6070000" />
+      <workItem from="1640511663098" duration="374000" />
+      <workItem from="1640512738953" duration="139000" />
+      <workItem from="1640512998764" duration="2121000" />
+      <workItem from="1640515529768" duration="1433000" />
+      <workItem from="1640542702490" duration="3439000" />
+      <workItem from="1640549762814" duration="170000" />
+      <workItem from="1640549960199" duration="25000" />
+      <workItem from="1640550010957" duration="91000" />
+      <workItem from="1640550124851" duration="48000" />
+      <workItem from="1640550196542" duration="220000" />
+      <workItem from="1640550494125" duration="671000" />
+      <workItem from="1640551892878" duration="312000" />
+      <workItem from="1640552226459" duration="526000" />
+      <workItem from="1640553598265" duration="37000" />
+      <workItem from="1640603162853" duration="73000" />
+      <workItem from="1640634454296" duration="95000" />
+      <workItem from="1640634578570" duration="115840000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
