@@ -16,13 +16,13 @@
 
     <main class="content">
       <section class="profile">
-        <img class="profile__avatar" src="./images/profile-img.jpg" alt="Изображение мужчины" />
+        <img class="profile__avatar" src="./images/profile-img.jpg" alt="Аватар" />
         <div class="profile__info">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
-          <button type="button" class="profile__edit-button"></button>
+          <button type="button" class="profile__edit-button" aria-label="Редактировать" ></button>
           <p class="profile__subtitle">Исследователь океана</p>
         </div>
-        <button type="button" class="profile__add-button"></button>
+        <button type="button" class="profile__add-button" aria-label="Добавить"></button>
       </section>
 
       <section class="elements">
@@ -31,42 +31,42 @@
             <img class="element__image" src="./images/karachaevsk.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Карачаевск</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
           <li class="element">
             <img class="element__image" src="images/elbrus.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Гора Эльбрус</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
           <li class="element">
             <img class="element__image" src="./images/dombai.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Домбай</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
           <li class="element">
             <img class="element__image" src="./images/elbrus.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Гора Эльбрус</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
           <li class="element">
             <img class="element__image" src="./images/dombai.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Домбай</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
           <li class="element">
             <img class="element__image" src="./images/karachaevsk.jpg" alt="Изображение" />
             <div class="element__card">
               <h2 class="element__title">Карачаево-Черкессия</h2>
-              <img class="element__like element__like_active" src="./images/heart.svg" alt="Лайк" />
+              <button type="button" class="element__like-button" aria-label="Лайк"></button>
             </div>
           </li>
         </ul>
@@ -74,29 +74,21 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__copyright">© 2021 Mesto Russia</p>
+      <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
     </footer>
 
     <section class="popup">
-      <form class="popup__container" action="#">
+      <div class="popup__container">
         <button type="button" class="popup__close-btn" aria-label="Закрыть"></button>
         <h3 class="popup__title">Редактировать профиль</h3>
-        <label for='name-input'></label><input class="popup__text"
-                                                   type="text"
-                                                   placeholder="Имя"
-                                                   value="Жак-Ив Кусто"
-                                                   name="name"
-                                                   required
-                                                   id='name-input' />
-        <label for='job-input'></label><input class="popup__text"
-                                                  type="text"
-                                                  placeholder="Описание"
-                                                  value="Исследователь океана"
-                                                  name="description"
-                                                  required
-                                                  id='job-input' />
-        <button type="submit" class="popup__submit-btn" aria-label="Сохранить">Сохранить</button>
-      </form>
+        <form class="popup__form" name="form" action="" method="post">
+          <label for='name-input'></label>
+          <input class="popup__text" type="text" placeholder="Имя" value="" name="name" required id='name-input' />
+          <label for='job-input'></label>
+          <input class="popup__text" type="text" placeholder="Описание" value="" name="description" required id='job-input' />
+          <button type="submit" class="popup__submit-btn" aria-label="Сохранить">Сохранить</button>
+        </form>
+      </div>
     </section>
   </div>
 

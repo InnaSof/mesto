@@ -1,8 +1,6 @@
 .element__card {
-  max-width: 246px;
   display: flex;
   justify-content: space-between;
-  padding: 25px 15px 31px 21px;
-  background-color: #fff;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
+  margin: 25px 30px 30px 21px;
 }

@@ -5,14 +5,27 @@ let popupOpenedClass = 'popup_opened';
 let nameInput = document.querySelector('.profile__title');
 let jobInput = document.querySelector('.profile__subtitle');
 let popupForm = document.querySelector('.popup__container');
-let buttonSaveForm = document.querySelector('.popup__submit-btn');
+let popupFormName = document.getElementById('name-input');
+let popupFormJob = document.getElementById('job-input');
 
+// функция открытия попап
 function openPopup() {
     popup.classList.add(popupOpenedClass);
+    popupFormName.value = 'Жак-Ив Кусто';
+    popupFormJob.value = 'Исследователь океана';
 }
 
+// функция закрытия попап
 function closePopup() {
     popup.classList.remove(popupOpenedClass);
+}
+
+// функция меняет данные на сайте, в соответвии с вносимыми данными в форму попап
+function formSubmitHandler(evt) {
+    evt.preventDefault();
+    nameInput.textContent = popupFormName.value;
+    jobInput.textContent = popupFormJob.value;
+    closePopup();
 }
 
 buttonEditForm.addEventListener('click', function() {
@@ -22,15 +35,5 @@ buttonEditForm.addEventListener('click', function() {
 buttonCloseForm.addEventListener('click', function() {
     closePopup();
 });
-
-
-function formSubmitHandler(evt) {
-    evt.preventDefault();
-    let name = document.getElementsByClassName('popup__text')[0].value;
-    let description = document.getElementsByClassName('popup__text')[1].value;
-    nameInput.textContent = name;
-    jobInput.textContent = description;
-    closePopup();
-}
 
 popupForm.addEventListener('submit', formSubmitHandler);
