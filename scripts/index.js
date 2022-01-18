@@ -11,8 +11,8 @@ let popupFormJob = document.getElementById('job-input');
 // функция открытия попап
 function openPopup() {
     popup.classList.add(popupOpenedClass);
-    popupFormName.value = 'Жак-Ив Кусто';
-    popupFormJob.value = 'Исследователь океана';
+    popupFormName.value = nameInput.textContent;
+    popupFormJob.value = jobInput.textContent;
 }
 
 // функция закрытия попап
@@ -28,12 +28,8 @@ function formSubmitHandler(evt) {
     closePopup();
 }
 
-buttonEditForm.addEventListener('click', function() {
-    openPopup();
-});
+buttonEditForm.addEventListener('click', openPopup);
 
-buttonCloseForm.addEventListener('click', function() {
-    closePopup();
-});
+buttonCloseForm.addEventListener('click', closePopup);
 
 popupForm.addEventListener('submit', formSubmitHandler);

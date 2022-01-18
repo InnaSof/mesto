@@ -11,7 +11,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  padding: 0;
+  padding: 0 0 9px 0;
 }
 
 .popup__text:last-of-type {
