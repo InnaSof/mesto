@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef46fe9c-24ae-4778-a601-bd871a825867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__form/popup__form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__delete-button/element__delete-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/element/__like-button/_active/element__like-button_active.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container_card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__image-card/popup__image-card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__image-name/popup__image-name.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/popup__image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_image.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__card/element__card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__card/element__card.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/element/__image/element__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__like/_active/element__like_active.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__like/element__like.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__like-button/element__like-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__title/element__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__title/element__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/element/__like-button/element__like-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__like-button/element__like-button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__close-btn/popup__close-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__close-btn/popup__close-btn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__text/popup__text.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__text/popup__text.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__title/popup__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__title/popup__title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__edit-button/profile__edit-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/add-button-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/edit-button-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -69,6 +67,16 @@
       <command value=" kara" />
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/index.js" working-dir="$PROJECT_DIR$/scripts">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +103,8 @@
       <workItem from="1640603162853" duration="73000" />
       <workItem from="1640634454296" duration="95000" />
       <workItem from="1640634578570" duration="117011000" />
-      <workItem from="1642412106350" duration="16312000" />
+      <workItem from="1642412106350" duration="20654000" />
+      <workItem from="1643197700457" duration="78153000" />
     </task>
     <servers />
   </component>
