@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef46fe9c-24ae-4778-a601-bd871a825867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/element/__delete-button/element__delete-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/element/__like-button/_active/element__like-button_active.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image-card/popup__image-card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image-name/popup__image-name.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__image/popup__image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_edit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__image/element__image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__image/element__image.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/__like-button/element__like-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/__like-button/element__like-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/element/element.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/element/element.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -104,7 +92,7 @@
       <workItem from="1640634454296" duration="95000" />
       <workItem from="1640634578570" duration="117011000" />
       <workItem from="1642412106350" duration="20654000" />
-      <workItem from="1643197700457" duration="78153000" />
+      <workItem from="1643197700457" duration="92303000" />
     </task>
     <servers />
   </component>
