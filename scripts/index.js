@@ -119,29 +119,29 @@ initialCards.forEach(item => {
 //функция открытия попап
 function openPopup(popup) {
     popup.classList.add(popupOpenedClass);
+    document.addEventListener('click', clickOverlay);
     document.addEventListener('keydown', pressEscape);
-    document.addEventListener('mousedown', clickOverlay);
 }
 
 //функция закрытия попап
 function closePopup(popup) {
     popup.classList.remove(popupOpenedClass);
+    document.removeEventListener('click', clickOverlay);
     document.removeEventListener('keydown', pressEscape);
-    document.removeEventListener('mousedown', clickOverlay);
 }
-
-//функция нажатия escape
-function pressEscape(evt) {
-    const openedPopup = document.querySelector('.popup_opened');
-    if (evt.key === 'Escape') {
-        closePopup(openedPopup);
-    }
-};
 
 //функция нажатия overlay
 function clickOverlay(evt) {
     const openedPopup = document.querySelector('.popup_opened');
     if (evt.target === openedPopup) {
+        closePopup(openedPopup);
+    }
+};
+
+//функция нажатия escape
+function pressEscape(evt) {
+    const openedPopup = document.querySelector('.popup_opened');
+    if (evt.key === 'Escape') {
         closePopup(openedPopup);
     }
 };

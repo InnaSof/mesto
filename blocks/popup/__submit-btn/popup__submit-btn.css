@@ -8,7 +8,7 @@
   background: #000;
   color: #fff;
   border-radius: 2px;
-  margin: 48px 0 0 0;
+  margin: 0;
   padding: 0;
   cursor: pointer;
 }
@@ -23,6 +23,6 @@
     height: 46px;
     font-size: 14px;
     line-height: 17px;
-    margin: 45px 0 0 0;
+    margin: 0;
   }
 }

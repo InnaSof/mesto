@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef46fe9c-24ae-4778-a601-bd871a825867" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/_type/popup_type_edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error_visible.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input/_type/popup__input_type_error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__submit-btn/popup__submit-btn_disabled.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__submit-btn/popup__submit-btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__submit-btn/popup__submit-btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__text/popup__text.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
@@ -32,6 +39,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="22n2TW0K2wJvbd8mAFuDJ3WaEkL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -92,7 +102,9 @@
       <workItem from="1640634454296" duration="95000" />
       <workItem from="1640634578570" duration="117011000" />
       <workItem from="1642412106350" duration="20654000" />
-      <workItem from="1643197700457" duration="92303000" />
+      <workItem from="1643197700457" duration="92909000" />
+      <workItem from="1644088146115" duration="17000" />
+      <workItem from="1644573022698" duration="26078000" />
     </task>
     <servers />
   </component>
