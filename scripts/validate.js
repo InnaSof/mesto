@@ -1,5 +1,5 @@
 //объект конфигураций валидации
-const validationConfig = {
+export const validationConfig = {
     formSelector: '.popup__form',
     inputSelector: '.popup__input',
     inputErrorClass: 'popup__input_type_error',
@@ -9,7 +9,7 @@ const validationConfig = {
 }
 
 // функция включения валидации всех форм
-function enableValidation(data) {
+export function enableValidation(data) {
     const forms = [...document.querySelectorAll(data.formSelector)]
     forms.forEach(form => addFormListeners(form, data))
 }
@@ -17,10 +17,12 @@ function enableValidation(data) {
 //функция обработки форм
 function addFormListeners(form, config) {
     form.addEventListener('submit', handleSubmit)
-    form.addEventListener('input', () => setSubmitButtonState(form, config))
 
     const inputs = [...form.querySelectorAll(config.inputSelector)]
-    inputs.forEach(input => input.addEventListener('input', () => handleFieldInput(form, input, config)))
+    inputs.forEach(input => input.addEventListener('input', function () {
+        handleFieldInput(form, input, config);
+        setSubmitButtonState (form, config);
+    }))
 
     setSubmitButtonState (form, config)
 }
@@ -31,7 +33,7 @@ function handleSubmit(evt) {
 }
 
 //функция обработки поля формы
-function handleFieldInput(form, input, config) {
+export function handleFieldInput(form, input, config) {
     if (input.validity.valid) {
         hideError(form, input, config);
     } else {
@@ -50,7 +52,7 @@ function showError(form, input, config) {
 }
 
 //функция скрывает ошибку
-function hideError(form, input, config) {
+export function hideError(form, input, config) {
     input.classList.remove(config.inputErrorClass)
 
     const errorElement = form.querySelector(`#${input.id}-error`);
@@ -59,7 +61,7 @@ function hideError(form, input, config) {
 }
 
 //функция состояния кнопки отправки в зависимости от валидности формы
-function setSubmitButtonState (form, config) {
+export function setSubmitButtonState (form, config) {
     const button = form.querySelector(config.submitButtonSelector)
 
     button.disabled = !form.checkValidity()
