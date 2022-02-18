@@ -90,14 +90,12 @@ const handleAddCardSubmit = (evt) => {
         link: inputCardLink.value
     }
     addElement(element);
-    formCard.reset();  //очистка формы
     closePopup(popupTypeCard);
 }
 
 //функция открытия попап
 function openPopup(popup) {
     popup.classList.add(popupOpenedClass);
-    setSubmitButtonState (formCard, validationConfig);
     document.addEventListener('keydown', pressEscape);
 }
 
@@ -105,12 +103,6 @@ function openPopup(popup) {
 function closePopup(popup) {
     popup.classList.remove(popupOpenedClass);
     document.removeEventListener('keydown', pressEscape);
-
-    inputsCard.forEach(function (item) {
-        hideError(formCard, item, validationConfig);
-    });
-
-    formCard.reset();
 }
 
 //функция нажатия escape
@@ -134,11 +126,6 @@ function openPopupProfile() {
     openPopup(popupTypeEdit);
     popupFormName.value = nameInput.textContent;
     popupFormJob.value = jobInput.textContent;
-
-    inputsProfile.forEach(function(input) {
-        handleFieldInput(formProfile, input, validationConfig)
-    });
-    setSubmitButtonState (formProfile, validationConfig);
 }
 
 // функция меняет данные на сайте, в соответвии с вносимыми данными в форму попап
@@ -149,16 +136,39 @@ function handleEditProfileSubmit(evt) {
     closePopup(popupTypeEdit);
 }
 
-//слушатели редактирования формы
-buttonEditForm.addEventListener('click', openPopupProfile);
+//слушатель клика открытия попапа редактирования профайла
+buttonEditForm.addEventListener('click', () => {
+    openPopupProfile();
+    setSubmitButtonState (formProfile, validationConfig);
+
+    inputsProfile.forEach(function(input) {
+        handleFieldInput(formProfile, input, validationConfig)
+    });
+});
+
+//слушатель клика закрытия попапа редактирования профайла
 buttonCloseEditForm.addEventListener('click', () => closePopup(popupTypeEdit));
+
 popupProfileForm.addEventListener('submit', handleEditProfileSubmit);
+popupTypeEdit.addEventListener('click', clickOverlay);
 
-//слушатели добавления формы карточек
-buttonAddForm.addEventListener('click', () => openPopup(popupTypeCard));
+//слушатель клика открытия попапа карточки
+buttonAddForm.addEventListener('click', () => {
+    openPopup(popupTypeCard);
+    formCard.reset();
+
+    setSubmitButtonState (formCard, validationConfig);
+    inputsCard.forEach(function (item) {
+        hideError(formCard, item, validationConfig)
+    });
+});
+
+//слушатель клика закрытия попапа карточки
 buttonCloseAddForm.addEventListener('click', () => closePopup(popupTypeCard));
+
 popupFormCard.addEventListener('submit', handleAddCardSubmit);
+popupTypeCard.addEventListener('click', clickOverlay);
 
+//слушатель клика закрытия попапа изображения
 buttonCloseFormImage.addEventListener('click', () => closePopup(popupTypeImage));
-
-document.addEventListener('click', clickOverlay);
+popupTypeImage.addEventListener('click', clickOverlay);
