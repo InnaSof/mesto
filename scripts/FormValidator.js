@@ -2,6 +2,8 @@ export class FormValidator {
   constructor(config, form) {
     this._config = config;
     this._form = form;
+    this._button = this._form.querySelector(this._config.submitButtonSelector);
+    this._inputs = this._form.querySelectorAll(this._config.inputSelector);
   }
 
   //метод показывает ошибку
@@ -35,8 +37,6 @@ export class FormValidator {
 
   //метод состояния кнопки отправки в зависимости от валидности формы
   _setSubmitButtonState() {
-    this._button = this._form.querySelector(this._config.submitButtonSelector)
-
     this._button.disabled = !this._form.checkValidity()
     this._button.classList.toggle(this._config.inactiveButtonClass, !this._form.checkValidity())
   }
@@ -49,14 +49,21 @@ export class FormValidator {
 //метод обработки форм
   _setEventListeners() {
     this._form.addEventListener('submit', this._handleSubmit);
+    this._setSubmitButtonState();
 
-    const inputs = [...this._form.querySelectorAll(this._config.inputSelector)]
-
-    inputs.forEach((input) => {
+    this._inputs.forEach((input) => {
       input.addEventListener('input', () => {
         this._handleFieldInput(input);
         this._setSubmitButtonState();
       });
+    });
+  }
+
+  resetFormValidation() {
+    this._button.classList.add(this._config.inactiveButtonClass);
+
+    this._inputs.forEach((input) => { 
+      this._hideError(input)
     });
   }
 

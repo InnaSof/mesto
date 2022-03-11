@@ -34,7 +34,7 @@
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
     </footer>
 
-    <section class="popup popup_type_edit">
+    <div class="popup popup_type_edit">
       <div class="popup__container">
         <button type="button" class="popup__close-btn" aria-label="Закрыть"></button>
         <h3 class="popup__title">Редактировать профиль</h3>
@@ -68,9 +68,9 @@
           <button type="submit" class="popup__submit-btn" aria-label="Сохранить">Сохранить</button>
         </form>
       </div>
-    </section>
+    </div>
 
-    <section class="popup popup_type_card">
+    <div class="popup popup_type_card">
       <div class="popup__container popup__container_card">
         <button type="button" class="popup__close-btn" aria-label="Закрыть"></button>
         <h3 class="popup__title">Новое место</h3>
@@ -101,15 +101,15 @@
           <button type="submit" class="popup__submit-btn" aria-label="Создать">Создать</button>
         </form>
       </div>
-    </section>
+    </div>
 
-    <section class="popup popup_type_image">
+    <div class="popup popup_type_image">
       <div class="popup__image-card">
         <button type="button" class="popup__close-btn" aria-label="Закрыть"></button>
         <img class="popup__image" src="." alt="" />
         <h3 class="popup__image-name"></h3>
       </div>
-    </section>
+    </div>
 
   </div>
 
@@ -125,6 +125,9 @@
   </template>
 
   <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/Card.js"></script>
+  <script type="module" src="./scripts/FormValidator.js"></script>
+  <script type="module" src="./scripts/initial-cards.js"></script>
 
 </body>
 </html>
