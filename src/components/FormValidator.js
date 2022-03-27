@@ -60,13 +60,14 @@ export class FormValidator {
   }
 
   resetFormValidation() {
-    this._button.classList.add(this._config.inactiveButtonClass);
+    this._button.classList.add(this._config.inactiveButtonClass); 
+    this._setSubmitButtonState();
 
     this._inputs.forEach((input) => { 
       this._hideError(input)
     });
   }
-
+  
 // функция включения валидации всех форм
   enableValidation() {
     this._setEventListeners();
