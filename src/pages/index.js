@@ -48,17 +48,18 @@ const popupConfirm = new PopupWithConfirmation(popupTypeConfirm);
     }
   });
 
-  //Загрузка данных профайла с сервера
-  let userId
-  api.getProfileInfo()
-  .then((user) => {
-    userId = user._id
-    userData.setUserInfo(user.name, user.about);
-    userData.setUserAvatar(user.avatar);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+let userId
+Promise.all([api.getProfileInfo(), api.getInitialCards()])
+.then(([user, cards]) => {
+  userId = user._id
+  userData.setUserInfo(user.name, user.about);
+  userData.setUserAvatar(user.avatar);
+  
+  sectionCard.renderItems(cards);
+})
+.catch(err => {
+  console.log(err);
+});
 
   // PATCH редактируем профайл
   const popupProfileEdit = new PopupWithForm(popupTypeEdit,
@@ -67,6 +68,7 @@ const popupConfirm = new PopupWithConfirmation(popupTypeConfirm);
       api.editProfile(data.name, data.description)
         .then((user) => {
           userData.setUserInfo(user.name, user.about);
+          popupProfileEdit.close();
         })
         .catch((err) => console.error(err))
         .finally(() => {
@@ -79,8 +81,9 @@ const popupConfirm = new PopupWithConfirmation(popupTypeConfirm);
     function handleFormSubmit(avatar) {
       popupAvatarEdit.renderLoading(true);
       api.editAvatar(avatar.avatar)
-        .then(() => {
-          profileAvatar = userData.setUserAvatar(avatar.avatar);
+        .then((res) => {
+          userData.setUserAvatar(res.avatar);
+          popupAvatarEdit.close();
         })
         .catch((err) => console.error(err))
         .finally(() => {
@@ -98,15 +101,6 @@ const popupConfirm = new PopupWithConfirmation(popupTypeConfirm);
     popupCardImg.open(name, link);
   }
 
-  //Загрузка карточек с сервера
-  api.getInitialCards()
-  .then((res) => {
-    sectionCard.renderItems(res);
-  })
-  .catch((err) => {
-    console.log(err);
-  }); 
-
   // Отрисовка элементов на странице
   const sectionCard = new Section({ 
     renderer: (item) => {
@@ -120,7 +114,8 @@ const popupConfirm = new PopupWithConfirmation(popupTypeConfirm);
       popupCardAdd.renderLoading(true);
       api.addCard(item['card-name'], item['card_url'])
         .then((res) => {
-          sectionCard.addItem(newCard(res));  
+          sectionCard.addItem(newCard(res));
+          popupCardAdd.close();
         })
         .catch((err) => console.error(err))
         .finally(() => {
@@ -143,7 +138,6 @@ buttonAddCard.addEventListener('click', () => {
 
 buttonEditAvatar.addEventListener('click', () => {
   popupAvatarEdit.open();
-  avatarInputUrl.value = '';
   validationFormAvatar.resetFormValidation();
 });
 
